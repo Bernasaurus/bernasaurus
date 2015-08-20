@@ -1,12 +1,48 @@
 <?php
-header("refresh: 5; http://bernasaurus.com/public/");
+/**
+ * October - The PHP platform that gets back to basics.
+ *
+ * @package  October
+ * @author   Alexey Bobkov, Samuel Georges
+ */
 
-	echo '<title>Laravel Installed</title><div style="background: #e9ffed; border: 1px solid #b0dab7; padding: 15px;" align="center" >
-	<font size="5" color="#182e7a">Laravel is installed successfully.</font><br /><br />
-	<font size="4">Laravel is a Framework and doesn\'t have an index page.<br /><br />
-	You will be redirected to its "public" folder in 5 seconds...<br /><br />
-	Laravel is a clean and classy framework for PHP web development.
+/*
+|--------------------------------------------------------------------------
+| Register composer
+|--------------------------------------------------------------------------
+|
+| Composer provides a generated class loader for the application.
+|
+*/
 
-Freeing you from spaghetti code, Laravel helps you create wonderful applications using simple, expressive syntax. Development should be a creative experience that you enjoy, not something that is painful. Enjoy the fresh air.
-</font></div>';
-?>
+require __DIR__.'/bootstrap/autoload.php';
+
+/*
+|--------------------------------------------------------------------------
+| Load framework
+|--------------------------------------------------------------------------
+|
+| This bootstraps the framework and loads up this application.
+|
+*/
+
+$app = require_once __DIR__.'/bootstrap/app.php';
+
+/*
+|--------------------------------------------------------------------------
+| Process request
+|--------------------------------------------------------------------------
+|
+| Execute the request and send the response back to the client.
+|
+*/
+
+$kernel = $app->make('Illuminate\Contracts\Http\Kernel');
+
+$response = $kernel->handle(
+    $request = Illuminate\Http\Request::capture()
+);
+
+$response->send();
+
+$kernel->terminate($request, $response);

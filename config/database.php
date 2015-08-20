@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => 'mysql',
 
     /*
     |--------------------------------------------------------------------------
@@ -48,28 +48,29 @@ return [
 
         'sqlite' => [
             'driver'   => 'sqlite',
-            'database' => storage_path('database.sqlite'),
+            'database' => 'storage/database.sqlite',
             'prefix'   => '',
         ],
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => env('DB_HOST', 'localhost'),
-            'database'  => env('DB_DATABASE', 'forge'),
-            'username'  => env('DB_USERNAME', 'forge'),
-            'password'  => env('DB_PASSWORD', ''),
+            'host'      => 'localhost',
+            'port'      => 3306,
+            'database'  => 'omewqhix_octobercms',
+            'username'  => 'omewqhix_berna',
+            'password'  => '1990Koalabeer',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
-            'strict'    => false,
         ],
 
         'pgsql' => [
             'driver'   => 'pgsql',
-            'host'     => env('DB_HOST', 'localhost'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'host'     => 'localhost',
+            'port'     => '',
+            'database' => 'database',
+            'username' => 'root',
+            'password' => '',
             'charset'  => 'utf8',
             'prefix'   => '',
             'schema'   => 'public',
@@ -77,11 +78,11 @@ return [
 
         'sqlsrv' => [
             'driver'   => 'sqlsrv',
-            'host'     => env('DB_HOST', 'localhost'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
-            'charset'  => 'utf8',
+            'host'     => 'localhost',
+            'port'     => '',
+            'database' => 'database',
+            'username' => 'root',
+            'password' => '',
             'prefix'   => '',
         ],
 
@@ -94,7 +95,7 @@ return [
     |
     | This table keeps track of all the migrations that have already run for
     | your application. Using this information, we can determine which of
-    | the migrations on disk haven't actually been run in the database.
+    | the migrations on disk have not actually be run in the databases.
     |
     */
 
@@ -118,7 +119,7 @@ return [
         'default' => [
             'host'     => '127.0.0.1',
             'port'     => 6379,
-            'database' => 0,
+            'database' => 'omewqhix_octobercms',
         ],
 
     ],

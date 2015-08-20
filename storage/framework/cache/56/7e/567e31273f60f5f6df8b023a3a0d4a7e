@@ -1,0 +1,55 @@
+1440072604s:2261:"a:6:{s:5:"mtime";i:1440071966;s:7:"content";s:1049:"description = "Subscribe Section"
+==
+<div class="container">
+				<div class="row footer">
+					<div class="col-md-12">
+						<h3>Subscribe for Our Newsletter!</h3>
+						<p>Subscribe to our newsletter email to get notification about fresh news, latest promos, giveaways and free stuff from Skew. Stay always up-to-date!</p>
+						<div class="fr">
+						<div style="display: inline-block;">
+							<input class="col-md-6 fEmail" name='Email' placeholder='Enter Your Email'/>
+							<a href="#" class="subS">Subscribe!</a>
+						</div>
+						</div>
+					</div>
+					<div class="soc col-md-12">
+						<ul>
+							<li class="soc1"><a href="#"></a></li>
+							<li class="soc2"><a href="#"></a></li>
+							<li class="soc3"><a href="#"></a></li>
+							<li class="soc4"><a href="#"></a></li>
+							<li class="soc5"><a href="#"></a></li>
+							<li class="soc6"><a href="#"></a></li>
+							<li class="soc7"><a href="#"></a></li>
+							<li class="soc8"><a href="#"></a></li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>";s:7:"viewBag";a:0:{}s:8:"settings";a:2:{s:11:"description";s:17:"Subscribe Section";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:1012:"<div class="container">
+				<div class="row footer">
+					<div class="col-md-12">
+						<h3>Subscribe for Our Newsletter!</h3>
+						<p>Subscribe to our newsletter email to get notification about fresh news, latest promos, giveaways and free stuff from Skew. Stay always up-to-date!</p>
+						<div class="fr">
+						<div style="display: inline-block;">
+							<input class="col-md-6 fEmail" name='Email' placeholder='Enter Your Email'/>
+							<a href="#" class="subS">Subscribe!</a>
+						</div>
+						</div>
+					</div>
+					<div class="soc col-md-12">
+						<ul>
+							<li class="soc1"><a href="#"></a></li>
+							<li class="soc2"><a href="#"></a></li>
+							<li class="soc3"><a href="#"></a></li>
+							<li class="soc4"><a href="#"></a></li>
+							<li class="soc5"><a href="#"></a></li>
+							<li class="soc6"><a href="#"></a></li>
+							<li class="soc7"><a href="#"></a></li>
+							<li class="soc8"><a href="#"></a></li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>";}";

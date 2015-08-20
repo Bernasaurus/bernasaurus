@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'driver' => env('SESSION_DRIVER', 'file'),
+    'driver' => 'file',
 
     /*
     |--------------------------------------------------------------------------
@@ -24,8 +24,8 @@ return [
     |--------------------------------------------------------------------------
     |
     | Here you may specify the number of minutes that you wish the session
-    | to be allowed to remain idle before it expires. If you want them
-    | to immediately expire on the browser closing, set that option.
+    | to be allowed to remain idle for it is expired. If you want them
+    | to immediately expire when the browser closes, set it to zero.
     |
     */
 
@@ -57,16 +57,16 @@ return [
     |
     */
 
-    'files' => storage_path('framework/sessions'),
+    'files' => storage_path().'/framework/sessions',
 
     /*
     |--------------------------------------------------------------------------
     | Session Database Connection
     |--------------------------------------------------------------------------
     |
-    | When using the "database" or "redis" session drivers, you may specify a
-    | connection that should be used to manage these sessions. This should
-    | correspond to a connection in your database configuration options.
+    | When using the "database" session driver, you may specify the database
+    | connection that should be used to manage your sessions. This should
+    | correspond to a connection in your "database" configuration file.
     |
     */
 
@@ -109,7 +109,7 @@ return [
     |
     */
 
-    'cookie' => 'laravel_session',
+    'cookie' => 'october_session',
 
     /*
     |--------------------------------------------------------------------------
