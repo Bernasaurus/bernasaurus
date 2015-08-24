@@ -1,0 +1,38 @@
+title = "Post"
+url = "/post/:slug"
+layout = "mainLayout"
+is_hidden = "0"
+robot_index = "index"
+robot_follow = "follow"
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "category"
+==
+<header class="intro-header" style="background-image: url('{{ 'assets/img/skitty.jpg'|theme }}')">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+                <h1>{{ post.title }}</h1>
+                <span class="meta">Posted
+                    {% if post.categories.count %} in {% endif %}
+                    {% for category in post.categories %}
+                        <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                    {% endfor %}
+                    on {{ post.published_at|date('M d, Y') }}</span>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                {{ post.content_html|raw }}
+            </div>
+        </div>
+    </div>
+</article>
+<hr>

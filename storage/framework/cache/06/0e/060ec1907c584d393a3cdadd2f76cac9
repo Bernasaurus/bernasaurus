@@ -1,4 +1,4 @@
-1440072617s:4086:"a:6:{s:5:"mtime";i:1440071980;s:7:"content";s:1967:"==
+1440407295s:2583:"a:6:{s:5:"mtime";i:1440147693;s:7:"content";s:1215:"==
 <!-- Footer -->
     <footer>
         <div class="container">
@@ -6,31 +6,15 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
                         <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            <a href="https://www.facebook.com/pages/Accio-Tardis-Cosplay/1583170568565071">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                                 </span>
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2015</p>
+                    <p class="copyright text-muted">Copyright &copy; Bernasaurus 2015</p>
                 </div>
             </div>
         </div>
@@ -43,38 +27,22 @@
     <script src="{{ 'assets/js/bootstrap.min.js'|theme }}"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="{{ 'assets/js/clean-blog.min.js'|theme }}"></script>";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:1963:"<!-- Footer -->
+    <script src="{{ 'assets/js/clean-blog.min.js'|theme }}"></script>";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:1212:"<!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
                         <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            <a href="https://www.facebook.com/pages/Accio-Tardis-Cosplay/1583170568565071">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                                 </span>
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2015</p>
+                    <p class="copyright text-muted">Copyright &copy; Bernasaurus 2015</p>
                 </div>
             </div>
         </div>

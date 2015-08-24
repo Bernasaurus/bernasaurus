@@ -1,8 +1,8 @@
-1440072617s:7342:"a:6:{s:5:"mtime";i:1440071980;s:7:"content";s:3575:"title = "Clean Blog Index"
+1440083719s:7298:"a:6:{s:5:"mtime";i:1440083117;s:7:"content";s:3550:"title = "Clean Blog Index"
 url = "/index.html"
 layout = "mainLayout"
 description = "A Clean Blog Theme by Start Bootstrap"
-hidden = "0"
+is_hidden = "0"
 ==
 <!-- THE SAME "/" PAGE ... -->
 
@@ -15,9 +15,9 @@ hidden = "0"
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>Clean Blog</h1>
+                        <h1>Bernasaurus</h1>
                         <hr class="small">
-                        <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
+                        <span class="subheading">Anxiety and Me</span>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@ hidden = "0"
         </div>
     </div>
 
-    <hr>";s:7:"viewBag";a:0:{}s:8:"settings";a:6:{s:5:"title";s:16:"Clean Blog Index";s:3:"url";s:11:"/index.html";s:6:"layout";s:10:"mainLayout";s:11:"description";s:37:"A Clean Blog Theme by Start Bootstrap";s:6:"hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:3430:"<!-- THE SAME "/" PAGE ... -->
+    <hr>";s:7:"viewBag";a:0:{}s:8:"settings";a:6:{s:5:"title";s:16:"Clean Blog Index";s:3:"url";s:11:"/index.html";s:6:"layout";s:10:"mainLayout";s:11:"description";s:37:"A Clean Blog Theme by Start Bootstrap";s:9:"is_hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:3408:"<!-- THE SAME "/" PAGE ... -->
 
 
 
@@ -94,9 +94,9 @@ hidden = "0"
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>Clean Blog</h1>
+                        <h1>Bernasaurus</h1>
                         <hr class="small">
-                        <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
+                        <span class="subheading">Anxiety and Me</span>
                     </div>
                 </div>
             </div>

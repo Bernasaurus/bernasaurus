@@ -130,6 +130,13 @@ trait Validation
             $data = $this->getAttributes();
 
             /*
+             * Decode jsonable attribute values
+             */
+            foreach ($this->getJsonable() as $jsonable) {
+                $data[$jsonable] = $this->getAttribute($jsonable);
+            }
+
+            /*
              * Add relation values, if specified.
              */
             foreach ($rules as $attribute => $rule) {

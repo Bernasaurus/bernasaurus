@@ -23,31 +23,15 @@ class __TwigTemplate_46392834ef35d7811cc9dc91b6d8acfc553a441a1543f76dd65fb47563e
                 <div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1\">
                     <ul class=\"list-inline text-center\">
                         <li>
-                            <a href=\"#\">
-                                <span class=\"fa-stack fa-lg\">
-                                    <i class=\"fa fa-circle fa-stack-2x\"></i>
-                                    <i class=\"fa fa-twitter fa-stack-1x fa-inverse\"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href=\"#\">
+                            <a href=\"https://www.facebook.com/pages/Accio-Tardis-Cosplay/1583170568565071\">
                                 <span class=\"fa-stack fa-lg\">
                                     <i class=\"fa fa-circle fa-stack-2x\"></i>
                                     <i class=\"fa fa-facebook fa-stack-1x fa-inverse\"></i>
                                 </span>
                             </a>
                         </li>
-                        <li>
-                            <a href=\"#\">
-                                <span class=\"fa-stack fa-lg\">
-                                    <i class=\"fa fa-circle fa-stack-2x\"></i>
-                                    <i class=\"fa fa-github fa-stack-1x fa-inverse\"></i>
-                                </span>
-                            </a>
-                        </li>
                     </ul>
-                    <p class=\"copyright text-muted\">Copyright &copy; Your Website 2015</p>
+                    <p class=\"copyright text-muted\">Copyright &copy; Bernasaurus 2015</p>
                 </div>
             </div>
         </div>
@@ -55,19 +39,19 @@ class __TwigTemplate_46392834ef35d7811cc9dc91b6d8acfc553a441a1543f76dd65fb47563e
 
     <!-- jQuery -->
     <script src=\"";
-        // line 39
+        // line 23
         echo $this->env->getExtension('CMS')->themeFilter("assets/js/jquery.js");
         echo "\"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src=\"";
-        // line 42
+        // line 26
         echo $this->env->getExtension('CMS')->themeFilter("assets/js/bootstrap.min.js");
         echo "\"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src=\"";
-        // line 45
+        // line 29
         echo $this->env->getExtension('CMS')->themeFilter("assets/js/clean-blog.min.js");
         echo "\"></script>";
     }
@@ -84,6 +68,6 @@ class __TwigTemplate_46392834ef35d7811cc9dc91b6d8acfc553a441a1543f76dd65fb47563e
 
     public function getDebugInfo()
     {
-        return array (  71 => 45,  65 => 42,  59 => 39,  19 => 1,);
+        return array (  55 => 29,  49 => 26,  43 => 23,  19 => 1,);
     }
 }

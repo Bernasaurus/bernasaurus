@@ -6,14 +6,18 @@
 
         this.formAction = this.$form.attr('action')
         this.sessionKey = $('input[name=_session_key]', this.$form).val()
-        this.codeEditor = this.$markdownEditor.markdownEditor('getEditorObject')
 
-        this.$markdownEditor.on('oc.markdownEditorInitPreview', $.proxy(this.initPreview, this))
+        if (this.$markdownEditor.length > 0) {
+            this.codeEditor = this.$markdownEditor.markdownEditor('getEditorObject')
 
-        this.initDropzones()
-        this.initFormEvents()
+            this.$markdownEditor.on('oc.markdownEditorInitPreview', $.proxy(this.initPreview, this))
+
+            this.initDropzones()
+            this.initFormEvents()
+            this.addToolbarButton()
+        }
+
         this.initLayout()
-        this.addToolbarButton()
     }
 
     PostForm.prototype.addToolbarButton = function() {

@@ -1,12 +1,12 @@
-1440072617s:3704:"a:6:{s:5:"mtime";i:1440071980;s:7:"content";s:1756:"title = "Clean Blog - About"
+1440146987s:2295:"a:6:{s:5:"mtime";i:1440146385;s:7:"content";s:1049:"title = "Clean Blog - About"
 url = "/about.html"
 layout = "mainLayout"
 description = "Clean Blog - About"
-hidden = "0"
+is_hidden = "0"
 ==
 <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('{{ 'assets/img/about-bg.jpg'|theme }}')">
+    <header class="intro-header" style="background-image: url('{{ 'assets/img/skitty.jpg'|theme }}')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -24,16 +24,14 @@ hidden = "0"
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum molestiae debitis nobis, quod sapiente qui voluptatum, placeat magni repudiandae accusantium fugit quas labore non rerum possimus, corrupti enim modi! Et.</p>
+                <p>Hey! I'm Bernadet</p>
             </div>
         </div>
     </div>
 
-    <hr>";s:7:"viewBag";a:0:{}s:8:"settings";a:6:{s:5:"title";s:18:"Clean Blog - About";s:3:"url";s:11:"/about.html";s:6:"layout";s:10:"mainLayout";s:11:"description";s:18:"Clean Blog - About";s:6:"hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:1628:"<!-- Page Header -->
+    <hr>";s:7:"viewBag";a:0:{}s:8:"settings";a:6:{s:5:"title";s:18:"Clean Blog - About";s:3:"url";s:11:"/about.html";s:6:"layout";s:10:"mainLayout";s:11:"description";s:18:"Clean Blog - About";s:9:"is_hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:924:"<!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('{{ 'assets/img/about-bg.jpg'|theme }}')">
+    <header class="intro-header" style="background-image: url('{{ 'assets/img/skitty.jpg'|theme }}')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -51,9 +49,7 @@ hidden = "0"
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum molestiae debitis nobis, quod sapiente qui voluptatum, placeat magni repudiandae accusantium fugit quas labore non rerum possimus, corrupti enim modi! Et.</p>
+                <p>Hey! I'm Bernadet</p>
             </div>
         </div>
     </div>

@@ -1,0 +1,38 @@
+title = "Category list"
+url = "/category-list"
+layout = "mainLayout"
+is_hidden = "0"
+robot_index = "index"
+robot_follow = "follow"
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = "1"
+categoryPage = "category"
+==
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header" style="background-image: url('{{ 'assets/img/skitty.jpg'|theme }}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>Bernasaurus</h1>
+                    <hr class="small">
+                    <span class="subheading">Anxiety and Me</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {% component 'blogCategories' %}
+        </div>
+    </div>
+</div>
+
+<hr>

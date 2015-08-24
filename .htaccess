@@ -3,8 +3,10 @@
     <IfModule mod_negotiation.c>
         Options -MultiViews
     </IfModule>
-
+    
     RewriteEngine On
+    RewriteCond %{HTTP_HOST} ^bernasaurus.com [NC]
+    RewriteRule ^(.*)$ http://www.bernasaurus.com/$1 [L,R=301]
 
     ##
     ## You may need to uncomment the following line for some hosting environments,

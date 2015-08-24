@@ -1,0 +1,159 @@
+1440410009s:6899:"a:6:{s:5:"mtime";i:1440408694;s:7:"content";s:3310:"title = "Category"
+url = "/category/:slug"
+layout = "mainLayout"
+is_hidden = "0"
+robot_index = "index"
+robot_follow = "follow"
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{ :slug }}"
+postsPerPage = "10"
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "category"
+postPage = "post"
+==
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header" style="background-image: url('{{ 'assets/img/skitty.jpg'|theme }}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>Bernasaurus</h1>
+                    <hr class="small">
+                    <span class="subheading">Anxiety and Me</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {% if not category %}
+                <h2>Category not found</h2>
+            {% else %}
+                <h2>{{ category.name }}</h2>
+            
+                <div class="post-preview">
+                    {% for post in posts %}
+                    <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                    <p>
+                        {% if post.excerpt %}
+                            {{ post.excerpt }}
+                        {% else %}
+                            {{ post.content_html|raw }}
+                        {% endif %}
+                        <a href="{{ post.url }}">...read more</a>
+                    </p>
+    
+                    <p class="post-meta">
+                        Posted
+                        {% if post.categories.count %} in {% endif %}
+                        {% for category in post.categories %}
+                            <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                        on {{ post.published_at|date('M d, Y') }}
+                    </p>
+                    {% endfor %}
+                </div>
+    
+                {% if posts.lastPage > 1 %}
+                <ul class="pager">
+                    {% if posts.currentPage > 1 %}
+                    <li class="prev"><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage-1) }) }}">&larr; Prev</a></li>
+                    {% endif %}
+    
+                    {% for page in 1..posts.lastPage %}
+                    <li class="{{ posts.currentPage == page ? 'active' : null }}">
+                        <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
+                    </li>
+                    {% endfor %}
+    
+                    {% if posts.lastPage > posts.currentPage %}
+                    <li class="next"><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage+1) }) }}">Next &rarr;</a></li>
+                    {% endif %}
+                </ul>
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<hr>";s:7:"viewBag";a:0:{}s:8:"settings";a:7:{s:5:"title";s:8:"Category";s:3:"url";s:15:"/category/:slug";s:6:"layout";s:10:"mainLayout";s:9:"is_hidden";s:1:"0";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";s:10:"components";a:1:{s:9:"blogPosts";a:7:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"categoryFilter";s:11:"{{ :slug }}";s:12:"postsPerPage";s:2:"10";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:8:"category";s:8:"postPage";s:4:"post";}}}s:4:"code";N;s:6:"markup";s:2979:"<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header" style="background-image: url('{{ 'assets/img/skitty.jpg'|theme }}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>Bernasaurus</h1>
+                    <hr class="small">
+                    <span class="subheading">Anxiety and Me</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {% if not category %}
+                <h2>Category not found</h2>
+            {% else %}
+                <h2>{{ category.name }}</h2>
+            
+                <div class="post-preview">
+                    {% for post in posts %}
+                    <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                    <p>
+                        {% if post.excerpt %}
+                            {{ post.excerpt }}
+                        {% else %}
+                            {{ post.content_html|raw }}
+                        {% endif %}
+                        <a href="{{ post.url }}">...read more</a>
+                    </p>
+    
+                    <p class="post-meta">
+                        Posted
+                        {% if post.categories.count %} in {% endif %}
+                        {% for category in post.categories %}
+                            <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                        on {{ post.published_at|date('M d, Y') }}
+                    </p>
+                    {% endfor %}
+                </div>
+    
+                {% if posts.lastPage > 1 %}
+                <ul class="pager">
+                    {% if posts.currentPage > 1 %}
+                    <li class="prev"><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage-1) }) }}">&larr; Prev</a></li>
+                    {% endif %}
+    
+                    {% for page in 1..posts.lastPage %}
+                    <li class="{{ posts.currentPage == page ? 'active' : null }}">
+                        <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
+                    </li>
+                    {% endfor %}
+    
+                    {% if posts.lastPage > posts.currentPage %}
+                    <li class="next"><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage+1) }) }}">Next &rarr;</a></li>
+                    {% endif %}
+                </ul>
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<hr>";}";

@@ -32,23 +32,21 @@ class __TwigTemplate_b83a18682b66018fb1b778909f46d4a5d8efb409d4be9058b7500ef9239
         // line 7
         echo "
 
-
 ";
-        // line 10
+        // line 9
         echo $this->env->getExtension('CMS')->pageFunction();
         echo "  
-  
 
 ";
-        // line 13
+        // line 11
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("analytics"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 14
+        // line 12
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("footer"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 15
+        // line 13
         echo "
 </body>
 </html>";
@@ -66,6 +64,6 @@ class __TwigTemplate_b83a18682b66018fb1b778909f46d4a5d8efb409d4be9058b7500ef9239
 
     public function getDebugInfo()
     {
-        return array (  52 => 15,  48 => 14,  44 => 13,  38 => 10,  33 => 7,  29 => 6,  23 => 2,  19 => 1,);
+        return array (  50 => 13,  46 => 12,  42 => 11,  37 => 9,  33 => 7,  29 => 6,  23 => 2,  19 => 1,);
     }
 }

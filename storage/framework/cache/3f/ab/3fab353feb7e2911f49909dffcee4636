@@ -1,0 +1,64 @@
+1440410009s:2618:"a:6:{s:5:"mtime";i:1440408059;s:7:"content";s:1193:"title = "Post"
+url = "/post/:slug"
+layout = "mainLayout"
+is_hidden = "0"
+robot_index = "index"
+robot_follow = "follow"
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "category"
+==
+<header class="intro-header" style="background-image: url('{{ 'assets/img/skitty.jpg'|theme }}')">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+                <h1>{{ post.title }}</h1>
+                <span class="meta">Posted
+                    {% if post.categories.count %} in {% endif %}
+                    {% for category in post.categories %}
+                        <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                    {% endfor %}
+                    on {{ post.published_at|date('M d, Y') }}</span>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                {{ post.content_html|raw }}
+            </div>
+        </div>
+    </div>
+</article>
+<hr>";s:7:"viewBag";a:0:{}s:8:"settings";a:7:{s:5:"title";s:4:"Post";s:3:"url";s:11:"/post/:slug";s:6:"layout";s:10:"mainLayout";s:9:"is_hidden";s:1:"0";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";s:10:"components";a:1:{s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:8:"category";}}}s:4:"code";N;s:6:"markup";s:1012:"<header class="intro-header" style="background-image: url('{{ 'assets/img/skitty.jpg'|theme }}')">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+                <h1>{{ post.title }}</h1>
+                <span class="meta">Posted
+                    {% if post.categories.count %} in {% endif %}
+                    {% for category in post.categories %}
+                        <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                    {% endfor %}
+                    on {{ post.published_at|date('M d, Y') }}</span>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                {{ post.content_html|raw }}
+            </div>
+        </div>
+    </div>
+</article>
+<hr>";}";

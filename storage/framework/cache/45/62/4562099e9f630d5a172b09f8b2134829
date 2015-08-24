@@ -1,0 +1,14 @@
+1440145357s:350:"a:2:{s:5:"mtime";i:1440144750;s:7:"content";s:296:"{% set post = __SELF__.post %}
+
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                {{ post.content_html|raw }}
+            </div>
+        </div>
+    </div>
+</article>
+";}";
